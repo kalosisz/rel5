@@ -23,8 +23,6 @@ jobs:
           prerelease: true
           versioning-strategy: prerelease
           changelog-path: CHANGELOG/Test.md
-          tag-separator: '/'
-          default-branch: main
           release-as: v1.0.0-beta0
 
   release-please-prod:
@@ -37,6 +35,4 @@ jobs:
           token: ${{ secrets.TOKEN }}
           release-type: go
           changelog-path: CHANGELOG/Prod.md
-          tag-separator: '/'
-          default-branch: prod
           release-as: v1.0.0
