@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0-beta2](https://github.com/kalosisz/rel5/compare/v1.0.0-beta1...v1.0.0-beta2) (2023-09-01)
+
+
+### Features
+
+* cba ([a74cb03](https://github.com/kalosisz/rel5/commit/a74cb03b6335326902eb953208546290260cf379))
+
 ## [1.0.0-beta1](https://github.com/kalosisz/rel5/compare/v1.0.0-beta0...v1.0.0-beta1) (2023-09-01)
 
 
