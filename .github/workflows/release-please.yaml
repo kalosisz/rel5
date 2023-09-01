@@ -26,7 +26,7 @@ jobs:
           release-as: v1.0.0-beta0
 
       - uses: google-github-actions/release-please-action@v3
-        if: steps.release-please-test.outputs.release-created
+        if: steps.release-please-test.outputs.release-created == 'true'
         name: release-please-prod
         with:
           token: ${{ secrets.TOKEN }}
