@@ -24,6 +24,8 @@ jobs:
           prerelease: true
           versioning-strategy: prerelease
           changelog-path: CHANGELOG/Test.md
+          labels: 'test: pending'
+          release-labels: 'test: tagged'
 
       - uses: google-github-actions/release-please-action@v3
         if: steps.test.outputs.releases_created
@@ -32,3 +34,5 @@ jobs:
           token: ${{ secrets.TOKEN }}
           release-type: go
           changelog-path: CHANGELOG/Prod.md
+          labels: 'prod: pending'
+          release-labels: 'prod: tagged'
