@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0-beta1](https://github.com/kalosisz/rel5/compare/v1.0.0-beta0...v1.0.0-beta1) (2023-09-01)
+
+
+### Features
+
+* abc ([2cf1fa1](https://github.com/kalosisz/rel5/commit/2cf1fa1215e1edd8225b7121bdc8ec500bc700cc))
+
 ## 1.0.0-beta0 (2023-09-01)
 
 
