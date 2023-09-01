@@ -25,14 +25,10 @@ jobs:
           changelog-path: CHANGELOG/Test.md
           release-as: v1.0.0-beta0
 
-  release-please-prod:
-    runs-on: ubuntu-22.04
-    needs: release-please-test
-    steps:
       - uses: google-github-actions/release-please-action@v3
+        if: steps.release-please-test.outputs.release-created
         name: release-please-prod
         with:
           token: ${{ secrets.TOKEN }}
           release-type: go
           changelog-path: CHANGELOG/Prod.md
-          release-as: v1.0.0
