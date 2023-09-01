@@ -1,0 +1,15 @@
+on:
+  release:
+    types:
+      - prereleased
+
+name: deploy-test
+
+jobs:
+  deploy:
+    environment: test
+    runs-on: ubuntu-22.04
+    steps:
+      - run: |
+          echo "Release ${{ github.sha }}"
+          echo "Ref name ${{ github.ref_name }}"

@@ -1,0 +1,15 @@
+on:
+  release:
+    types:
+      - released
+
+name: deploy-prod
+
+jobs:
+  deploy:
+    environment: prod
+    runs-on: ubuntu-22.04
+    steps:
+      - run: |
+          echo "Release ${{ github.sha }}"
+          echo "Ref name ${{ github.ref_name }}"
