@@ -17,6 +17,7 @@ jobs:
     steps:
       - uses: google-github-actions/release-please-action@v3
         name: release-please-test
+        id: test
         with:
           token: ${{ secrets.TOKEN }}
           release-type: go
@@ -25,7 +26,7 @@ jobs:
           changelog-path: CHANGELOG/Test.md
 
       - uses: google-github-actions/release-please-action@v3
-        if: steps.release-please-test.outputs.releases_created
+        if: steps.test.outputs.releases_created
         name: release-please-prod
         with:
           token: ${{ secrets.TOKEN }}
